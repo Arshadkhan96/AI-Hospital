@@ -16,8 +16,8 @@ const Home = () => {
         </p>
       </header>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <Link to="/symptom-checker">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
+        <Link to="/symptom-checker" className="w-full">
           <FeatureCard
             icon={<Brain className="h-8 w-8 text-blue-600" />}
             title="AI Symptom Checker"
@@ -25,23 +25,15 @@ const Home = () => {
           />
         </Link>
 
-        <Link to="/appointments">
+        <Link to="/appointments" className="w-full">
           <FeatureCard
             icon={<Calendar className="h-8 w-8 text-blue-600" />}
             title="Smart Appointments"
             description="Book and manage appointments with AI-powered scheduling"
           />
         </Link>
-
-        <Link to="/chat">
-          <FeatureCard
-            icon={<MessageCircle className="h-8 w-8 text-blue-600" />}
-            title="24/7 AI Chat Support"
-            description="Get immediate responses to your medical queries anytime"
-          />
-        </Link>
-
-        <Link to="/health-analytics">
+        
+        <Link to="/health-analytics" className="w-full">
           <FeatureCard
             icon={<Activity className="h-8 w-8 text-blue-600" />}
             title="Health Analytics"
@@ -86,7 +78,7 @@ const Home = () => {
 };
 
 const FeatureCard = ({ icon, title, description }) => (
-  <div className="bg-white rounded-xl shadow-lg p-6 transition-transform hover:-translate-y-1 cursor-pointer">
+  <div className="bg-white rounded-xl shadow-lg p-6 transition-transform hover:-translate-y-1 cursor-pointer w-full h-60 flex flex-col justify-between">
     <div className="mb-4">{icon}</div>
     <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
     <p className="text-gray-600">{description}</p>

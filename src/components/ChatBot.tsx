@@ -44,7 +44,7 @@ const ChatBot = () => {
       {
         text: "Hello! I'm your AI medical assistant. How can I help you today?",
         isBot: true
-      }
+      }   
     ]);
   };
 
