@@ -24,7 +24,7 @@ function App() {
             <Route path="/symptom-checker" element={<SymptomChecker />} />
             <Route path="/appointments" element={<Appointments />} />
             <Route path="/chat" element={<ChatBot />} />
-            <Route path='/signUp' element={<SignUpForm/>}/>
+            {/* <Route path='/signUp' element={<SignUpForm/>}/> */}
             <Route path="/help-desk" element={<HelpDesk />} /> {/* Add this line */}
             <Route path="/feedback" element={<Feedback />} /> {/* Add this line */}
             <Route path="/health-analytics" element={<HealthAnalytics/>}/>
